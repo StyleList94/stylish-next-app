@@ -1,6 +1,7 @@
-import React from "react";
-import type { DocumentContext } from "next/document";
-import Document, { Head, Html, Main, NextScript } from "next/document";
+import React from 'react';
+import Document, { Head, Html, Main, NextScript } from 'next/document';
+
+import type { DocumentContext } from 'next/document';
 
 React.useLayoutEffect = React.useEffect;
 
