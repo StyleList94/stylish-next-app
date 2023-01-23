@@ -1,11 +1,11 @@
 import React from 'react';
-import Document, { Head, Html, Main, NextScript } from 'next/document';
+import NextDocument, { Head, Html, Main, NextScript } from 'next/document';
 
 import type { DocumentContext } from 'next/document';
 
 React.useLayoutEffect = React.useEffect;
 
-class MyDocument extends Document {
+class CustomDocument extends NextDocument {
   static async getInitialProps(ctx: DocumentContext) {
     const originalRenderPage = ctx.renderPage;
 
@@ -19,7 +19,7 @@ class MyDocument extends Document {
       });
 
     // Run the parent `getInitialProps`, it now includes the custom `renderPage`
-    return await Document.getInitialProps(ctx);
+    return await NextDocument.getInitialProps(ctx);
   }
 
   render() {
@@ -49,4 +49,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument;
+export default CustomDocument;
