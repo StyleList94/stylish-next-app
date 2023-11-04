@@ -4,11 +4,12 @@ create stylish next app
 
 ## Feature
 
+- App Directory
 - Jest and React Testing Library
 - ESLint
 - Prettier
 - Module path aliases
-- Emotion
+- tailwindcss
 
 ## Getting Started
 
