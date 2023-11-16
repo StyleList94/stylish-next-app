@@ -44,29 +44,57 @@
     }
   ],
   "rules": {
-    "consistent-return": ["error", { "treatUndefinedAsUnspecified": false }],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/return-await": "off",
+    "consistent-return": [
+      "error",
+      {
+        "treatUndefinedAsUnspecified": false
+      }
+    ],
+    "jsx-a11y/label-has-associated-control": [
+      2,
+      {
+        "labelAttributes": [
+          "label"
+        ],
+        "depth": 3
+      }
+    ],
     "no-param-reassign": [
       "error",
       {
         "props": true,
-        "ignorePropertyModificationsForRegex": ["^state$", "^ctx$"]
+        "ignorePropertyModificationsForRegex": [
+          "^state$",
+          "^ctx$"
+        ]
       }
     ],
+    "react-hooks/rules-of-hooks": "error",
     "react/function-component-definition": [
       2,
       {
-        "namedComponents": ["arrow-function", "function-declaration"],
+        "namedComponents": [
+          "arrow-function",
+          "function-declaration"
+        ],
         "unnamedComponents": "arrow-function"
       }
     ],
-    "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ],
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": "off",
-    "react/react-in-jsx-scope": "off",
-    "react-hooks/rules-of-hooks": "error",
-    "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/no-empty-interface": "off",
-    "@typescript-eslint/no-unsafe-call": "off",
-    "@typescript-eslint/return-await": "off"
+    "react/react-in-jsx-scope": "off"
   }
 }
