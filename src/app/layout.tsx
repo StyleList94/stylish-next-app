@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 import type { Metadata } from 'next';
-import AppProvider from '@/components/AppProvider';
+import AppProvider from '@/components/providers';
 
 import { dmSans, inter, roboto, robotoMono } from 'app/fonts';
 
