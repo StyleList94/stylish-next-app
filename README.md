@@ -5,7 +5,7 @@ create stylish next app
 ## Feature
 
 - App Directory
-- Jest and React Testing Library
+- Unit Testing
 - ESLint
 - Prettier
 - Module path aliases
