@@ -13,7 +13,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "next": "^14.0.1",
+    "next": "^14.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -24,8 +24,8 @@
     "@testing-library/react": "^14.1.2",
     "@testing-library/user-event": "^14.5.1",
     "@types/node": "^20.8.10",
-    "@types/react": "^18.2.34",
-    "@types/react-dom": "^18.2.14",
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
     "@typescript-eslint/eslint-plugin": "^6.9.1",
     "@typescript-eslint/parser": "^6.9.1",
     "@vitejs/plugin-react": "^4.2.1",
@@ -35,7 +35,7 @@
     "eslint": "^8.32.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-config-next": "^14.0.1",
+    "eslint-config-next": "^14.1.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-jsx-a11y": "^6.7.1",
@@ -46,7 +46,7 @@
     "eslint-plugin-vitest": "^0.3.20",
     "husky": "^7.0.0",
     "jsdom": "^24.0.0",
-    "lint-staged": "^12.3.5",
+    "lint-staged": "^15.2.2",
     "postcss": "^8.4.31",
     "prettier": "^2.8.3",
     "tailwindcss": "^3.3.5",
