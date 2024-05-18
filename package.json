@@ -10,7 +10,7 @@
     "test": "vitest",
     "test:coverage": "vitest --coverage",
     "test:ui": "vitest --ui",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "next": "^14.2.2",
