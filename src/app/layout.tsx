@@ -2,9 +2,9 @@ import type { ReactNode } from 'react';
 import type { Metadata } from 'next';
 import AppProvider from '@/components/providers';
 
-import { inter, robotoMono } from 'assets/fonts';
+import { inter, robotoMono } from '@/assets/fonts';
 
-import 'styles/global.css';
+import '@/styles/global.css';
 
 export const metadata: Metadata = {
   title: 'Stylish Next App',
