@@ -12,12 +12,12 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "next": "15.1.6",
+    "next": "15.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "15.1.6",
+    "@next/eslint-plugin-next": "15.2.0",
     "@svgr/webpack": "^8.1.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -34,7 +34,7 @@
     "eslint": "^8",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^18.0.0",
-    "eslint-config-next": "15.1.6",
+    "eslint-config-next": "15.2.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
@@ -49,6 +49,6 @@
     "tailwindcss": "^3.4.16",
     "typescript": "^5",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^2.1.8"
+    "vitest": "^3.0.7"
   }
 }
