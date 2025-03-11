@@ -1,8 +1,9 @@
+import { inter, robotoMono } from '@/assets/fonts';
+
 import type { ReactNode } from 'react';
 import type { Metadata, Viewport } from 'next';
-import AppProvider from '@/components/providers';
 
-import { inter, robotoMono } from '@/assets/fonts';
+import AppProvider from '@/providers/app-provider';
 
 import '@/styles/global.css';
 
