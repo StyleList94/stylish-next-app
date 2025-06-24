@@ -1,6 +1,5 @@
-/* eslint-disable import/prefer-default-export */
-import { NextResponse } from 'next/server';
+export const dynamic = 'auto';
 
-export async function GET() {
-  return NextResponse.json({ name: 'StyleList94' });
+export function GET() {
+  return Response.json({ name: 'StyleList94' });
 }
