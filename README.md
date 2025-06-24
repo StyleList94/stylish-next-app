@@ -2,12 +2,17 @@
 
 Create stylish NEXT app
 
+<img src="https://github.com/user-attachments/assets/6ce5d9d0-0352-48dd-a302-a212acb674d2" width="720px" />
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FStyleList94%2Fstylish-next-app)
+
 ## Feature
 
-### App Router
+### NEXT
 
-- `src` Directory
-- Module path aliases: `@/` 
+- `src/` Directory
+- import alias: `@/`
+- Turbopack for `next dev` 
 - Support TypeScript
 
 ### Testing
@@ -15,17 +20,21 @@ Create stylish NEXT app
 - Vitest
 - DOM Testing with React Testing Library
 
+
 ### Code Formater
 
-- ESLint Flat config
+- ESLint
+  - Support flat config
+  - Include [Stylish config](https://github.com/StyleList94/eslint-config-stylish)
+  - Support `lint-staged`
 - Prettier
-- Support `lint-staged`
+
 
 ### Styling
 
-- `tailwindcss`
+- Tailwind CSS
 
-## Getting Started
+## How to use
 
 ```bash
 pnpm create next-app --example https://github.com/StyleList94/stylish-next-app
