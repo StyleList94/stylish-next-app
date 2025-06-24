@@ -30,5 +30,9 @@ describe('Index Page', () => {
       'href',
       expect.stringContaining('nextjs.org/docs'),
     );
+
+    expect(
+      screen.getByText('Whatever you create Stylish NEXT App'),
+    ).toBeInTheDocument();
   });
 });
