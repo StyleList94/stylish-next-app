@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import type { Metadata, Viewport } from 'next';
 
-import { inter, robotoMono } from '@/assets/fonts';
+import { geistSans, geistMono } from '@/assets/fonts';
 
 import AppProvider from '@/providers/app-provider';
 
@@ -19,7 +19,10 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${robotoMono.variable}`}>
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+    >
       <body>
         <AppProvider>{children}</AppProvider>
       </body>
