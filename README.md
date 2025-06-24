@@ -1,18 +1,32 @@
 # Stylish Next App
 
-create stylish next app
+Create stylish NEXT app
 
 ## Feature
 
-- App Directory
-- Unit Testing
-- ESLint
+### App Router
+
+- `src` Directory
+- Module path aliases: `@/` 
+- Support TypeScript
+
+### Testing
+
+- Vitest
+- DOM Testing with React Testing Library
+
+### Code Formater
+
+- ESLint Flat config
 - Prettier
-- Module path aliases
-- tailwindcss
+- Support `lint-staged`
+
+### Styling
+
+- `tailwindcss`
 
 ## Getting Started
 
 ```bash
-yarn create next-app --example https://github.com/StyleList94/stylish-next-app
+pnpm create next-app --example https://github.com/StyleList94/stylish-next-app
 ```
