@@ -8,6 +8,7 @@ describe('Index Page', () => {
   it('should be render', () => {
     render(<MainPage />);
 
+    expect(screen.getByText(/Stylish/)).toBeInTheDocument();
     expect(screen.getByAltText('Next.js logo')).toBeInTheDocument();
 
     expect(screen.getByText(/Get started by editing/)).toBeInTheDocument();
@@ -31,8 +32,6 @@ describe('Index Page', () => {
       expect.stringContaining('nextjs.org/docs'),
     );
 
-    expect(
-      screen.getByText('Whatever you create Stylish NEXT App'),
-    ).toBeInTheDocument();
+    expect(screen.getByText(/Make your NEXT app stylish/)).toBeInTheDocument();
   });
 });

@@ -2,7 +2,7 @@
 
 Create stylish NEXT app
 
-<img src="https://github.com/user-attachments/assets/6ce5d9d0-0352-48dd-a302-a212acb674d2" width="720px" />
+<img src="https://github.com/user-attachments/assets/6ce5d9d0-0352-48dd-a302-a212acb674d2" width="720px" alt="create-stylish-next-app" />
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FStyleList94%2Fstylish-next-app)
 
@@ -33,6 +33,12 @@ Create stylish NEXT app
 ### Styling
 
 - Tailwind CSS
+
+### Workflow
+
+- Git Hooks via `husky`
+  - `pre-commit`: run `lint-staged`
+  - `pre-push`: run `tsc`, test script
 
 ## How to use
 
