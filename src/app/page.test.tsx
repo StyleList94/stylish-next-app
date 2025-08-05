@@ -4,8 +4,8 @@ import { render, screen } from '@testing-library/react';
 
 import MainPage from './page';
 
-describe('Index Page', () => {
-  it('should be render', () => {
+describe('Main Page', () => {
+  it('should be rendered', () => {
     render(<MainPage />);
 
     expect(screen.getByText(/Stylish/)).toBeInTheDocument();
