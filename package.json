@@ -3,23 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typegen": "next typegen",
     "test:watch": "vitest",
     "test": "vitest run",
     "prepare": "husky"
   },
   "dependencies": {
-    "next": "15.4.5",
+    "next": "15.5.0",
     "react": "19.1.1",
     "react-dom": "19.1.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.29.0",
-    "@next/eslint-plugin-next": "15.4.5",
+    "@next/eslint-plugin-next": "15.5.0",
     "@svgr/webpack": "^8.1.0",
     "@tailwindcss/postcss": "^4.1.4",
     "@testing-library/dom": "^10.4.0",
@@ -27,12 +29,12 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
     "@types/node": "^20",
-    "@types/react": "19.1.9",
+    "@types/react": "19.1.10",
     "@types/react-dom": "19.1.7",
     "@vitejs/plugin-react": "^4.6.0",
     "@vitest/eslint-plugin": "^1.2.7",
     "eslint": "^9",
-    "eslint-config-next": "15.4.5",
+    "eslint-config-next": "15.5.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-config-stylish": "^2.2.0",
     "eslint-import-resolver-typescript": "^4.4.3",
@@ -53,7 +55,7 @@
     "vitest": "^3.2.4"
   },
   "resolutions": {
-    "@types/react": "19.1.9",
+    "@types/react": "19.1.10",
     "@types/react-dom": "19.1.7"
   }
 }

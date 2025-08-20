@@ -9,7 +9,7 @@ import '@/styles/global.css';
 
 export const metadata: Metadata = {
   title: 'Stylish Next App',
-  description: 'Whatever you create stylish Next.js App',
+  description: 'Make your next app stylish',
 };
 
 export const viewport: Viewport = {
@@ -17,7 +17,9 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: ReactNode }>) {
   return (
     <html
       lang="en"
