@@ -1,5 +1,5 @@
-import { globalIgnores } from 'eslint/config';
-import tseslint from 'typescript-eslint';
+import { defineConfig, globalIgnores } from 'eslint/config';
+import nextPlugin from '@next/eslint-plugin-next';
 import stylish from 'eslint-config-stylish';
 import stylishReact from 'eslint-config-stylish/react';
 import stylishReactHooks from 'eslint-config-stylish/react-hooks';
@@ -7,9 +7,8 @@ import stylishTypeScript from 'eslint-config-stylish/typescript';
 import eslintConfigPrettier from 'eslint-config-prettier/flat';
 import vitest from '@vitest/eslint-plugin';
 import testingLibrary from 'eslint-plugin-testing-library';
-import nextPlugin from '@next/eslint-plugin-next';
 
-export default tseslint.config(
+export default defineConfig(
   nextPlugin.configs['core-web-vitals'],
   globalIgnores([
     'node_modules/**',
