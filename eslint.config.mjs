@@ -1,7 +1,3 @@
-import { dirname } from 'node:path';
-import { fileURLToPath } from 'node:url';
-
-import { FlatCompat } from '@eslint/eslintrc';
 import { globalIgnores } from 'eslint/config';
 import tseslint from 'typescript-eslint';
 import stylish from 'eslint-config-stylish';
@@ -11,16 +7,10 @@ import stylishTypeScript from 'eslint-config-stylish/typescript';
 import eslintConfigPrettier from 'eslint-config-prettier/flat';
 import vitest from '@vitest/eslint-plugin';
 import testingLibrary from 'eslint-plugin-testing-library';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
+import nextPlugin from '@next/eslint-plugin-next';
 
 export default tseslint.config(
-  ...compat.extends('plugin:@next/next/core-web-vitals'),
+  nextPlugin.configs['core-web-vitals'],
   globalIgnores([
     'node_modules/**',
     '.next/**',

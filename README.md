@@ -12,23 +12,22 @@ Create stylish NEXT app
 
 - `src/` Directory
 - import alias: `@/`
-- Turbopack for `next dev` 
+- Turbopack
 - Support TypeScript
+- Typed Routes (Type-safe navigation)
 
 ### Testing
 
 - Vitest
 - DOM Testing with React Testing Library
 
-
-### Code Formater
+### Code Formatter
 
 - ESLint
-  - Support flat config
+  - Support flat config (ESLint 9)
   - Include [Stylish config](https://github.com/StyleList94/eslint-config-stylish)
   - Support `lint-staged`
 - Prettier
-
 
 ### Styling
 

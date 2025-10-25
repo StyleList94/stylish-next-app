@@ -11,12 +11,11 @@ describe('Main Page', () => {
     expect(screen.getByText(/Stylish/)).toBeInTheDocument();
     expect(screen.getByAltText('Next.js logo')).toBeInTheDocument();
 
-    expect(screen.getByText(/Get started by editing/)).toBeInTheDocument();
-    expect(screen.getByText('src/app/page.tsx')).toBeInTheDocument();
-
     expect(
-      screen.getByText('Save and see your changes instantly.'),
+      screen.getByText(/To get started, edit the page.tsx file./),
     ).toBeInTheDocument();
+
+    expect(screen.getByText(/Make your NEXT app stylish/)).toBeInTheDocument();
 
     const buttonDeploy = screen.getByRole('link', { name: /Deploy now/i });
     expect(buttonDeploy).toBeInTheDocument();
@@ -25,13 +24,11 @@ describe('Main Page', () => {
       expect.stringContaining('vercel.com/new'),
     );
 
-    const buttonDoc = screen.getByRole('link', { name: /Read our docs/i });
+    const buttonDoc = screen.getByRole('link', { name: /Documentation/i });
     expect(buttonDoc).toBeInTheDocument();
     expect(buttonDoc).toHaveAttribute(
       'href',
       expect.stringContaining('nextjs.org/docs'),
     );
-
-    expect(screen.getByText(/Make your NEXT app stylish/)).toBeInTheDocument();
   });
 });
